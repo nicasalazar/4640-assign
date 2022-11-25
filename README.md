@@ -21,6 +21,7 @@ source .env
 ### Create two directories dev and mgmt
 ```bash
 mkdir dev
+```
 
 ### Create the Configuration Files
 
