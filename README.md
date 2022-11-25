@@ -1,10 +1,10 @@
 # 4640-Assignment
 
-### Download Terraform
+## Download Terraform
 
-https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+Steps are from the following link: https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
 
-### Create a API Key in Digital Ocean
+## Create a API Key in Digital Ocean
 1. Create a digitocean account
 2. Generate a new API key and copy the key
 3. Remote into your host machine and create a .env file
@@ -18,12 +18,12 @@ export TF_VAR_do_token=<your api key>
 source .env
 ```
 
-### Create two directories dev and mgmt
+## Create two directories dev and mgmt
 ```bash
 mkdir dev
 ```
 
-### Create the Configuration Files
+## Create the Configuration Files
 
 - main.tf(provider info)
 - variables.tf(variables, anything that you use twice, or could change(region, size…) )
@@ -50,7 +50,7 @@ terraform apply
 #### You should receive this output if configured successfuly
 <img width="430" alt="Screen Shot 2022-11-24 at 3 55 54 PM" src="https://user-images.githubusercontent.com/60679947/203883564-13cc498c-a685-4cdd-a326-38eb04749897.png">
 
-### Connect to the Internal Server (Bastian)
+## Connect to the Internal Server (Bastian)
 #### On your local machine:
 ```bash
 eval $(ssh-agent)
@@ -65,14 +65,14 @@ ssh root@one-of-your-servers-ip
 ```
 <img width="554" alt="Screen Shot 2022-11-24 at 5 32 32 PM" src="https://user-images.githubusercontent.com/60679947/203883845-3a14a3aa-8fff-4b35-aaf1-6964710ce3e6.png">
 
-### Bastian Firewall Details
+## Bastian Firewall Details
 1. Go to your **Digital Ocean**
 2. In **Manage** select **Networking** then select **Firewall**
 
 <img width="1006" alt="Screen Shot 2022-11-24 at 5 53 05 PM" src="https://user-images.githubusercontent.com/60679947/203884737-a8260f85-bee9-40ae-8a99-2d63403f4f47.png">
 
 
-### Database Connection Details
+## Database Connection Details
 1. Go to your **Digital Ocean**
 2. In **Manage** select **Databases**
 3. Select the Database you created
