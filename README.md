@@ -36,9 +36,27 @@ mkdir dev
 - data.tf(data blocks, like your ssh keys)
 - .env
 
-##### Once created run
+#### Once created run
 ```bash
 terraform init
 terraform plan
 terraform apply
 ```
+#### You should receive this output if configured successfuly
+<img width="430" alt="Screen Shot 2022-11-24 at 3 55 54 PM" src="https://user-images.githubusercontent.com/60679947/203883564-13cc498c-a685-4cdd-a326-38eb04749897.png">
+
+### Connect to the Internal Server (Bastian)
+#### On your local machine:
+```bash
+eval $(ssh-agent)
+ssh-add /home/user-name/.ssh/DO_key
+ssh -A root@bastion-ip
+```
+<img width="494" alt="Screen Shot 2022-11-24 at 5 33 26 PM" src="https://user-images.githubusercontent.com/60679947/203883819-97b82f6f-4508-4d2d-b639-9bc2f4480471.png">
+
+#### Now connected to the bastion server via ssh
+```bash
+ssh root@one-of-your-servers-ip
+```
+<img width="554" alt="Screen Shot 2022-11-24 at 5 32 32 PM" src="https://user-images.githubusercontent.com/60679947/203883845-3a14a3aa-8fff-4b35-aaf1-6964710ce3e6.png">
+
