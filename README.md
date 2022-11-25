@@ -36,6 +36,11 @@ mkdir dev
 - data.tf(data blocks, like your ssh keys)
 - .env
 
+#### Your project structure should look similar to this
+
+<img width="323" alt="Screen Shot 2022-11-24 at 5 57 15 PM" src="https://user-images.githubusercontent.com/60679947/203885053-5e7548f9-1daf-497c-a433-f89856a3f120.png">
+
+
 #### Once created run
 ```bash
 terraform init
@@ -61,17 +66,17 @@ ssh root@one-of-your-servers-ip
 <img width="554" alt="Screen Shot 2022-11-24 at 5 32 32 PM" src="https://user-images.githubusercontent.com/60679947/203883845-3a14a3aa-8fff-4b35-aaf1-6964710ce3e6.png">
 
 ### Bastian Firewall Details
-1. Go to your Digital Ocean
-2. In Manage select Networking then select Firewall
+1. Go to your **Digital Ocean**
+2. In **Manage** select **Networking** then select **Firewall**
 
 <img width="1006" alt="Screen Shot 2022-11-24 at 5 53 05 PM" src="https://user-images.githubusercontent.com/60679947/203884737-a8260f85-bee9-40ae-8a99-2d63403f4f47.png">
 
 
 ### Database Connection Details
-1. Go to your Digital Ocean
-2. In Manage select Databases
+1. Go to your **Digital Ocean**
+2. In **Manage** select **Databases**
 3. Select the Database you created
-4. View the Connection Details
+4. View the **Connection Details**
 
 <img width="601" alt="Screen Shot 2022-11-24 at 5 46 44 PM" src="https://user-images.githubusercontent.com/60679947/203884325-77bcd09a-7d27-4e14-9a98-591a468683ff.png">
 
