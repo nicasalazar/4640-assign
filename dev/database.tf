@@ -11,10 +11,11 @@ resource "digitalocean_database_cluster" "mysql-database" {
 
 resource "digitalocean_database_firewall" "mysql-fw" {
   cluster_id = digitalocean_database_cluster.mysql-database.id
-
+  
+  
   rule {
     type  = "tag"
-    value = digitalocean_tag.do_tag.name
+    value = digitalocean_tag.do_tag.id
   }
 }
 

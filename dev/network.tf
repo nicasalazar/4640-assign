@@ -1,8 +1,4 @@
-resource "digitalocean_tag" "do_tag" {
-  name = "Web"
-}
-
 resource "digitalocean_vpc" "web_vpc" {
-  name     = "web"
+  name     = "assignment"
   region   = var.region
 }
