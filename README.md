@@ -35,3 +35,10 @@ mkdir dev
 - network.tf (your vpc)
 - data.tf(data blocks, like your ssh keys)
 - .env
+
+##### Once created run
+```bash
+terraform init
+terraform plan
+terraform apply
+```
