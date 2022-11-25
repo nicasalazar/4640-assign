@@ -54,14 +54,14 @@ terraform apply
 #### On your local machine:
 ```bash
 eval $(ssh-agent)
-ssh-add /home/user-name/.ssh/DO_key
-ssh -A root@bastion-ip
+ssh-add <your ssh key path>
+ssh -A root@<your bastion-ip>
 ```
 <img width="494" alt="Screen Shot 2022-11-24 at 5 33 26 PM" src="https://user-images.githubusercontent.com/60679947/203883819-97b82f6f-4508-4d2d-b639-9bc2f4480471.png">
 
 #### Now connected to the bastion server via ssh:
 ```bash
-ssh root@one-of-your-servers-ip
+ssh root@<one-of-your-servers-ip>
 ```
 <img width="554" alt="Screen Shot 2022-11-24 at 5 32 32 PM" src="https://user-images.githubusercontent.com/60679947/203883845-3a14a3aa-8fff-4b35-aaf1-6964710ce3e6.png">
 
